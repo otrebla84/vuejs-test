@@ -10,6 +10,7 @@
         </li>
       </ul>
     </div>
+    <locale></locale>
   </footer>
 </template>
 
@@ -17,15 +18,16 @@
 
   import footer from '../../../config/footer.js';
 
+  import Locale from '../common/Locale.vue';
+
   export default {
     name: 'app-footer',
+    components: { Locale },
     data() {
       return {
         footerLinks: footer.footer.links,
         footerStyle: footer.footer.style
       }
-    },
-    components: {
     }
   }
 

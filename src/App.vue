@@ -16,8 +16,8 @@
     components: { TheHeader, TheFooter },
     methods: {
       setLocale(locale) {
-      this.$i18n.locale = locale
-      this.$store.dispatch('setLocale', locale)
+        this.$i18n.locale = locale
+        this.$store.dispatch('setLocale', locale)
       }
     },
     mounted: function () {
