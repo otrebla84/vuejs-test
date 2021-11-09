@@ -1,5 +1,5 @@
 <template>
-  <h1>{{ $t('app.title') }}</h1>
+  <router-view></router-view>
 </template>
 
 <script>
@@ -8,7 +8,7 @@
     name: 'App',
     components: {},
     mounted: function () {
-      this.$i18n.locale = 'EN'
+      this.$i18n.locale = 'ES'
     }
   }
 
