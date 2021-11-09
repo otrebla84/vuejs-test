@@ -1,13 +1,17 @@
 <template>
-  <h1>vuejs-test</h1>
+  <h1>{{ $t('app.title') }}</h1>
 </template>
 
 <script>
 
-export default {
-  name: 'App',
-  components: {}
-}
+  export default {
+    name: 'App',
+    components: {},
+    mounted: function () {
+      this.$i18n.locale = 'EN'
+    }
+  }
+
 </script>
 
 <style>
