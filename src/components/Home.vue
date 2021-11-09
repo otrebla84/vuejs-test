@@ -1,6 +1,5 @@
 <template>
   <section id="app-home">
-    <h1>{{ $t('app.title') }}</h1>
   </section>
 </template>
 
