@@ -5,7 +5,7 @@
         <router-link v-if="item.link !== undefined" :to="item.link" >
           <span class="fa sidebar-icon" :class="item.icon" aria-hidden="true" :title="item.i18n ? $t(item.i18n) : item.text"></span>
         </router-link>
-        <span v-if="item.submenu !== undefined && item.submenu.length > 0" class="fa sidebar-icon" :class="item.icon" aria-hidden="true" :title="item.i18n ? $t(item.i18n) : item.text"></span>
+        <span tabindex="0" v-if="item.submenu !== undefined && item.submenu.length > 0" class="fa sidebar-icon" :class="item.icon" aria-hidden="true" :title="item.i18n ? $t(item.i18n) : item.text"></span>
         <ul v-if="item.submenu !== undefined && item.submenu.length > 0" class="dropdown-menu submenu">
           <li v-for="sub in item.submenu" :key="sub.id" :class="{ 'submenu': sub.submenu !== undefined }">
             <router-link v-if="sub.link !== undefined" :to="sub.link">{{ sub.i18n ? $t(sub.i18n) : sub.text }}</router-link>
@@ -87,6 +87,8 @@
     padding: 10px 0;
     margin: 0;
     box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0.25);
+    max-height:200px;
+    overflow-y:auto;
   }
   .menu-item.submenu ul li { 
     line-height: 30px;
@@ -112,4 +114,11 @@
     border: 1px solid var(--layout-border-color);
     border-radius: 5px;
   }
+  span.sidebar-icon:focus {
+    outline: 0;
+    outline-offset: 0;
+
+  }
+
+  
 </style>

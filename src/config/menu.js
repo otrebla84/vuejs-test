@@ -26,6 +26,9 @@ export default {
         { id: 'link3', text: 'Link 3', link: '/link3' },
         { id: 'link4', text: 'Link 4', link: '/link4' },
         { id: 'link5', text: 'Link 5', link: '/link5' },
+        { id: 'link6', text: 'Link 6', link: '/link6' },
+        { id: 'link7', text: 'Link 7', link: '/link7' },
+        { id: 'link8', text: 'Link 8', link: '/link8' }
       ]
     }
   }
