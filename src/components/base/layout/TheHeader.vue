@@ -69,7 +69,7 @@
   .logo .app-title {  
     margin: 20px 0;
     font-weight: 800;
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 2.5rem;
     display: inline-block;
     vertical-align: middle;

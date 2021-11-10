@@ -18,6 +18,7 @@
       setLocale(locale) {
         this.$i18n.locale = locale
         this.$store.dispatch('setLocale', locale)
+        sessionStorage.setItem('locale', locale)
       }
     },
     mounted: function () {
@@ -40,7 +41,7 @@
     height: 100vh;
     width: 100%;
     font-family: 'Open Sans';
-    font-size: 16px;
+    font-size: 15.5px;
     text-align: justify;
     overflow: auto; 
     margin: 0;
@@ -95,6 +96,58 @@
   }
 
   .app-main {
-    padding: 100px 50px 80px 50px;
+    width: calc(100% - 100px);
+    height: calc(100vh - 240px);
+    padding: 50px;
+    position: fixed;
+    top: 80px;
+    overflow-x: hidden;
   }
+
+  .main-title {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  .main-title .title {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: -2px;
+    display: inline-block;
+    width: calc(100% - 100px);
+  }
+  .main-title .actions {
+    display: inline-block;
+    width: 100px;
+  }
+  .icon-action,
+  .main-title .actions .action-icon {
+    margin-left:15px;
+  }
+
+  .section-title {
+    margin-top: 30px;
+    margin-bottom: 15px;    
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+  }
+  .section-title .title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: -1px;
+    width: calc(100% - 100px);
+    display: inline-block;
+  }
+
+  .section-title .actions {
+    display: inline-block;
+    width: 100px;
+    font-size: 20px;
+  }
+
+  .section-title .actions .action-icon {
+    margin-left:15px;
+  }
+
 </style>

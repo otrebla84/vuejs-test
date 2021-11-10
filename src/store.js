@@ -13,7 +13,6 @@ const store = createStore({
   },
   actions: {
     setLocale(context, locale) {
-      sessionStorage.setItem('locale', locale)
       context.commit('setLocale', locale)
     }
   },

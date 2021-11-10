@@ -21,7 +21,7 @@
           locale: sessionStorage.getItem('locale'),
           localeSrc: '/img/lang/' + sessionStorage.getItem('locale') + '.png'
         },
-        showChangeLocale: true,
+        showChangeLocale: false,
         timeout: null
       }
     },
@@ -31,10 +31,10 @@
     },
     methods: {
       setLocale(locale) {
-        this.localeData.locale = locale.toUpperCase()
-        this.localeData.localeSrc = '/img/lang/' + locale.toUpperCase() + '.png'
-        sessionStorage.setItem('locale', locale.toUpperCase())
+        this.localeData = { locale, localeSrc: '/img/lang/' + locale + '.png' }
         this.$i18n.locale = locale
+        this.$store.dispatch('setLocale', locale)
+        sessionStorage.setItem('locale', locale)
         this.showChangeLocale = false
       },
       showLocalePanel() {
