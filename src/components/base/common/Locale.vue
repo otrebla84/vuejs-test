@@ -91,7 +91,7 @@
   }
   .locale .locale-selector:focus {
     outline: 0;
-    border: 2px solid #7777d7;
+    border: 2px solid var(--border-color);
   }
   .locale .locale-list>li>a {
     padding: 0;
@@ -104,6 +104,6 @@
   .locale .btn-lang:active,
   .locale .btn-lang:focus {
     outline: 0;
-    border: 2px solid #7777d7;
+    border: 2px solid var(--border-color);
   }
 </style>

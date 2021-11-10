@@ -34,7 +34,11 @@
 <style>
 
   :root {
-    --link-color: #251faf;
+    --link-color: #b80404; /* #251faf #b80404 */
+    --app-title-color: #b80404;
+    --border-color: #b80404; /* #4e2ddd red */
+    --link-hover-color: red;
+    --app-title-hover-color: red
   }
 
   body {
@@ -61,7 +65,7 @@
     padding: 0;
     text-decoration: none;
   }
-  .a,
+  a,
   .link,
   .btn-link .link {
     color: var(--link-color);
@@ -83,10 +87,8 @@
     outline: 0;
     outline-offset: 0;
     text-decoration: none;
-    border-bottom: 2px solid #b80404;
-    border-bottom: 2px solid #251faf;
-    color:red;
-    color: #4e2ddd;
+    border-bottom: 2px solid var(--border-color);
+    color: var(--link-hover-color);
   }
   .pointer {
     cursor: pointer;
@@ -104,6 +106,30 @@
     overflow-x: hidden;
   }
 
+  .app-main::-webkit-scrollbar {
+      width: 12px;     /* Tamaño del scroll en vertical */
+      height: 12px;    /* Tamaño del scroll en horizontal */
+  }
+  .app-main::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 4px;
+  }
+  .app-main::-webkit-scrollbar-thumb:hover {
+      background: #b3b3b3;
+      box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  .app-main::-webkit-scrollbar-thumb:active {
+      background-color: #999999;
+  }
+  .app-main::-webkit-scrollbar-track {
+      background: #e1e1e1;
+      border-radius: 4px;
+  }
+  .app-main::-webkit-scrollbar-track:hover,
+  .app-main::-webkit-scrollbar-track:active {
+    background: #d4d4d4;
+  }
+  
   .main-title {
     border-bottom: 1px solid #eee;
     padding-bottom: 5px;
@@ -115,7 +141,8 @@
     font-weight: 300;
     letter-spacing: -2px;
     display: inline-block;
-    width: calc(100% - 100px);
+    width: calc(100% - 100px);  
+    padding: 0 10px;
   }
   .main-title .actions {
     display: inline-block;
@@ -138,6 +165,8 @@
     letter-spacing: -1px;
     width: calc(100% - 100px);
     display: inline-block;
+    padding: 0 10px;
+
   }
 
   .section-title .actions {
@@ -150,4 +179,8 @@
     margin-left:15px;
   }
 
+  p {
+    color: #555;
+    padding: 0 10px;
+  }
 </style>

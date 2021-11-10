@@ -60,7 +60,7 @@
   }
   .logo .logo-link:active,
   .logo .logo-link:focus {
-    border: 2px solid #7777d7;
+    border: 2px solid var(--border-color);
   }
   .logo .image {    
     height: 75px;
@@ -68,20 +68,15 @@
   }
   .logo .app-title {  
     margin: 20px 0;
-    font-weight: 800;
-    font-size: 2rem;
-    line-height: 2.5rem;
-    display: inline-block;
-    vertical-align: middle;
+    font-weight: 500;
+    font-size: 1.5rem;
     letter-spacing: -2px;
-    color: #b80404;
-    color: #251faf;
+    color: var(--app-title-color);
   }
   .logo .app-title:active,
   .logo .app-title:focus ,
   .logo .app-title:hover {  
-    color:red;
-    color: #4e2ddd;
+    color: var(--app-title-hover-color);
   }
 
 </style>
