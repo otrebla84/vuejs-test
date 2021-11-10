@@ -28,7 +28,7 @@
 
 <style scoped>
   .app-header { 
-    z-index: 10;
+    z-index: 20;
     position: fixed;
     height: 80px;
     width: 100%;

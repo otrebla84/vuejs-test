@@ -15,19 +15,16 @@
 
 <script>
   export default {
+    name: 'locale',
     data() {
       return {
         localeData: {
-          locale: sessionStorage.getItem('locale'),
-          localeSrc: '/img/lang/' + sessionStorage.getItem('locale') + '.png'
+          locale: sessionStorage.getItem('locale') ? sessionStorage.getItem('locale') : this.$i18n.locale,
+          localeSrc: '/img/lang/' + (sessionStorage.getItem('locale') ? sessionStorage.getItem('locale') : this.$i18n.locale) + '.png'
         },
         showChangeLocale: false,
         timeout: null
       }
-    },
-    props: {
-    },
-    components: {
     },
     methods: {
       setLocale(locale) {
