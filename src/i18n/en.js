@@ -8,5 +8,9 @@ export default {
     about: 'ABOUT',
     faqs: 'FAQs',
     contact: 'CONTACT'
+  },
+  404: {
+    message: 'Page not found',
+    back: 'Go back'
   }
 }

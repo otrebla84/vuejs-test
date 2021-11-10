@@ -1,12 +1,14 @@
 <template>
-    <div class="http-error-alert">
-        <div class="error">
-            <h2 class="http-error">
-                404<span class="http-error-desc">NotFound</span>
-            </h2>
+    <div class="app-main">
+        <div class="http-error-alert">
+            <div class="error">
+                <h2 class="http-error">
+                    404<span class="http-error-desc">NotFound</span>
+                </h2>
+            </div>
+            <p class="back">{{ $t('404.message') }}</p>
+            <p class="back"><span class="btn-link" @click="$router.go(-1)"><span class="link">{{ $t('404.back') }}</span></span></p>
         </div>
-        <p class="back">No se ha encontrado la página solicitada</p>
-        <p class="back"><span class="btn-link" @click="$router.go(-1)"><span class="link">Volver a la página anterior</span></span></p>
     </div>
 </template>
 
@@ -17,9 +19,9 @@
         border-top: 0 solid #eee;
         border-bottom: 0 solid #eee;
         position: fixed;
-        top: calc(50vh - 200px);
-        left: calc(50% - 450px);
-        height: 220px;
+        top: calc(50% - 80px);
+        left: calc(50% - 400px);
+        height: 160px;
         width: 800px;
     }
     .http-error-alert .error{

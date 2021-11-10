@@ -94,4 +94,7 @@
     pointer-events: none;
   }
 
+  .app-main {
+    padding: 100px 50px 80px 50px;
+  }
 </style>

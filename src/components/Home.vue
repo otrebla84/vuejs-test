@@ -1,5 +1,5 @@
 <template>
-  <section id="app-home">
+  <section id="app-home" class="app-main">
   </section>
 </template>
 

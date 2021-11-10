@@ -28,7 +28,10 @@
 
 <style scoped>
   .app-header { 
+    z-index: 10;
+    position: fixed;
     height: 80px;
+    width: 100%;
     margin: 0;
     padding: 0 20px;
     display: flex;
@@ -42,7 +45,7 @@
   
   .logo {
     height: 80px;
-    max-width: 50%;
+    max-width: 75%;
     display: inline-block;
     padding: 0;
   }
