@@ -1,5 +1,6 @@
 <template>
   <the-header></the-header>
+  <the-sidebar></the-sidebar>
   <router-view></router-view>
   <the-footer></the-footer>
 </template>
@@ -9,11 +10,12 @@
   import { mapGetters } from 'vuex'
 
   import TheHeader from './components/base/layout/TheHeader.vue'
+  import TheSidebar from './components/base/layout/TheSidebar.vue'
   import TheFooter from './components/base/layout/TheFooter.vue'
 
   export default {
     name: 'App',
-    components: { TheHeader, TheFooter },
+    components: { TheHeader, TheSidebar, TheFooter },
     methods: {
       setLocale(locale) {
         this.$i18n.locale = locale
@@ -38,7 +40,8 @@
     --app-title-color: #b80404;
     --border-color: #b80404; /* #4e2ddd red */
     --link-hover-color: red;
-    --app-title-hover-color: red
+    --app-title-hover-color: red;
+    --layout-border-color: #eee;
   }
 
   body {
@@ -52,13 +55,13 @@
     padding: 0;
   }
   .border-bottom {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--layout-border-color);
   }
   .border-right {
-    border-right: 1px solid #eee;
+    border-right: 1px solid var(--layout-border-color);
   }
   .border-top {
-    border-top: 1px solid #eee;
+    border-top: 1px solid var(--layout-border-color);
   }
   .btn-link {
     font-size: inherit;
@@ -98,9 +101,9 @@
   }
 
   .app-main {
-    width: calc(100% - 100px);
+    width: calc(100% - 150px);
     height: calc(100vh - 240px);
-    padding: 50px;
+    padding: 50px 50px 50px 100px;
     position: fixed;
     top: 80px;
     overflow-x: hidden;
@@ -131,7 +134,7 @@
   }
   
   .main-title {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--layout-border-color);
     padding-bottom: 5px;
     margin-top: 0;
     margin-bottom: 30px;
@@ -156,7 +159,7 @@
   .section-title {
     margin-top: 30px;
     margin-bottom: 15px;    
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--layout-border-color);
     padding-bottom: 5px;
   }
   .section-title .title {
