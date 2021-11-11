@@ -1,8 +1,19 @@
 <template>
+
+  <base-dialog :show="getDialog.message!==''" :title="getDialog.title" :icon="getDialog.icon" @close="closeDialog">
+    <template #default>
+      <p>{{getDialog.message}}</p>
+    </template>
+    <template #actions>
+      <base-button css="btn-primary" @click="closeDialog">{{$t('buttons.accept')}}</base-button>
+    </template>
+  </base-dialog>
+
   <the-header></the-header>
   <the-sidebar></the-sidebar>
   <router-view></router-view>
   <the-footer></the-footer>
+
 </template>
 
 <script>
@@ -21,13 +32,16 @@
         this.$i18n.locale = locale
         this.$store.dispatch('setLocale', locale)
         sessionStorage.setItem('locale', locale)
+      },
+      closeDialog() {
+        this.$store.dispatch('setDialog', { icon: '', title: '', message: '' }) 
       }
     },
     mounted: function () {
       this.setLocale('ES')
     },
     computed: {
-      ...mapGetters(['getLocale']),
+      ...mapGetters(['getLocale', 'getDialog']),
     }
   }
 
@@ -36,12 +50,17 @@
 <style>
 
   :root {
-    --link-color: #b80404; /* #251faf #b80404 */
-    --app-title-color: #b80404;
-    --border-color: #b80404; /* #4e2ddd red */
-    --link-hover-color: red;
-    --app-title-hover-color: red;
+    --link-color: #251faf; /* #251faf #b80404 */
+    --app-title-color: #251faf;
+    --border-color: #251faf; /* #4e2ddd red */
+    --link-hover-color: #4e2ddd;
+    --app-title-hover-color: #4e2ddd;
     --layout-border-color: #eee;
+    --btn-border-color: #ccc;
+    --btn-hover-border-color: #251faf;
+    --btn-hover-background: #e1dcff;
+    --btn-primary-background: #f3f1ff;
+    --btn-primary-border: #afa4f1;
   }
 
   body {
@@ -101,9 +120,9 @@
   }
 
   .app-main {
-    width: calc(100% - 150px);
+    width: calc(100% - 130px);
     height: calc(100vh - 240px);
-    padding: 50px 50px 50px 100px;
+    padding: 50px 30px 50px 100px;
     position: fixed;
     top: 80px;
     overflow-x: hidden;

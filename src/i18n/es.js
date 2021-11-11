@@ -4,6 +4,23 @@ export default {
   app: {
     title: 'vuejs-test'
   },
+  buttons: {
+    new: 'Nueva',
+    edit: 'Editar',
+    refresh: 'Actualizar',
+    save: 'Guardar',
+    accept: 'Aceptar',
+    cancel: 'Cancelar',
+    login: 'Iniciar sesión'
+  },
+  sidebar: {
+    home: 'Home',
+    examples: 'Ejemplos',
+    exampleForm: 'Formularios',
+    examplePanels: 'Paneles',
+    exampleButtons: 'Botones',
+    exampleDialogs: 'Modales'
+  },
   footer: {
     about: 'ACERCA DE',
     faqs: 'FAQs',

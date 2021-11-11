@@ -1,13 +1,13 @@
 <template>
   <div class="locale">
     <div class="dropup">
-      <button v-if="!showChangeLocale" @click="showLocalePanel()" class="btn btn-link locale-selector" type="button">
+      <button v-if="!showChangeLocale" @click="showLocalePanel()" class=" locale-selector" type="button">
         <img class="lang-selected" :src="localeData.localeSrc" :title="localeData.locale"/>
         <span class="caret"></span>
       </button>
       <ul v-if="showChangeLocale" class="locale-list">
-        <li><button class="btn btn-link btn-lang" @click="setLocale('ES')"><img class="lang-selected" src="/img/lang/ES.png"/></button></li>
-        <li><button class="btn btn-link btn-lang" @click="setLocale('EN')"><img class="lang-selected" src="/img/lang/EN.png"/></button></li>
+        <li><button class=" btn-lang" @click="setLocale('ES')"><img class="lang-selected" src="/img/lang/ES.png"/></button></li>
+        <li><button class=" btn-lang" @click="setLocale('EN')"><img class="lang-selected" src="/img/lang/EN.png"/></button></li>
       </ul>
     </div>
   </div>
@@ -59,6 +59,7 @@
     border: 2px solid transparent;
     background: transparent;
     height: 40px;
+    padding: 0;
   }
   .locale .locale-list {
     min-width: auto;
@@ -97,6 +98,7 @@
     border: 2px solid transparent;
     background: transparent;
     height: 40px;
+    padding: 0;
   }
   .locale .btn-lang:active,
   .locale .btn-lang:focus {

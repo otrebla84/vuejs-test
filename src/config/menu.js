@@ -4,31 +4,13 @@ export default {
       id: 'home', text: 'Home', icon: 'fa-home',
       link: '/'
     },
-    config: {
-      id: 'config', text: 'Config', icon: 'fa-wrench',
-      submenu: [
-        { id: 'link1', text: 'Link 1', link: '/link1' },
-        { id: 'link2', text: 'Link 2', link: '/link2' },
-        { id: 'link3', text: 'Link 3', link: '/link3' },
-        { id: 'link4', text: 'Link 4', link: '/link4' },
-        { id: 'link5', text: 'Link 5', link: '/link5' },
-      ]
-    },
     list: {
-      id: 'list', text: 'List', icon: 'fa-list',
-      link: '/'
-    },
-    play: {
-      id: 'play', text: 'Play', icon: 'fa-play',
+      id: 'list', i18n: 'sidebar.examples', icon: 'fa-list',
       submenu: [
-        { id: 'link1', text: 'Link 1', link: '/link1' },
-        { id: 'link2', text: 'Link 2', link: '/link2' },
-        { id: 'link3', text: 'Link 3', link: '/link3' },
-        { id: 'link4', text: 'Link 4', link: '/link4' },
-        { id: 'link5', text: 'Link 5', link: '/link5' },
-        { id: 'link6', text: 'Link 6', link: '/link6' },
-        { id: 'link7', text: 'Link 7', link: '/link7' },
-        { id: 'link8', text: 'Link 8', link: '/link8' }
+        { id: 'example-buttons',  i18n: 'sidebar.exampleButtons', link: '/examples/buttons' },
+        { id: 'example-panels',  i18n: 'sidebar.examplePanels', link: '/examples/panels' },
+        { id: 'example-dialogs',  i18n: 'sidebar.exampleDialogs', link: '/examples/dialogs' },
+        { id: 'example-forms', i18n: 'sidebar.exampleForm', link: '/examples/forms' }
       ]
     }
   }
