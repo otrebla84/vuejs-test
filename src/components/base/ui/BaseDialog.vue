@@ -80,9 +80,10 @@ export default {
   }
   .base-dialog .dialog-title .title {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: -1px;
     display: inline-block;
+    color: var(--title-color);
   }
   .base-dialog .dialog-buttons .btn {
     margin-left: 10px;

@@ -55,6 +55,8 @@
     --border-color: #251faf; /* #4e2ddd red */
     --link-hover-color: #4e2ddd;
     --app-title-hover-color: #4e2ddd;
+    --body-color: #555;
+    --title-color: #000;
     --layout-border-color: #eee;
     --btn-border-color: #ccc;
     --btn-hover-border-color: #251faf;
@@ -72,6 +74,7 @@
     overflow: auto; 
     margin: 0;
     padding: 0;
+    color: var(--body-color);
   }
   .border-bottom {
     border-bottom: 1px solid var(--layout-border-color);
@@ -165,6 +168,7 @@
     display: inline-block;
     width: calc(100% - 100px);  
     padding: 0 10px;
+    color: var(--title-color);
   }
   .main-title .actions {
     display: inline-block;
@@ -188,7 +192,7 @@
     width: calc(100% - 100px);
     display: inline-block;
     padding: 0 10px;
-
+    color: var(--title-color);
   }
 
   .section-title .actions {

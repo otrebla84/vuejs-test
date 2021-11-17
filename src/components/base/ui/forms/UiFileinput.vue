@@ -40,9 +40,9 @@
     },
     methods: {
       change(event) {
+        var files = event.target.files || event.dataTransfer.files;
+        this.file = files[0]
         if (this.file) {
-          var files = event.target.files || event.dataTransfer.files;
-          this.file = files[0]
           this.filename = this.file.name
           this.$emit('update:modelValue', this.file)
         }
