@@ -12,12 +12,12 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     { path: '/', name: 'home', components: { default: Home } },
-    { path: '/404', name: 'not-found', components: { default: NotFound } },
-    { path: '/:catchAll(.*)', redirect: '/404' }, 
-    { path: '/examples/forms',   name: 'ExamplesForms',  components: { default: ExampleForms   } },
+    { path: '/examples/forms',   name: 'ExampleForms',   components: { default: ExampleForms   } },
     { path: '/examples/buttons', name: 'ExampleButtons', components: { default: ExampleButtons } },
     { path: '/examples/panels',  name: 'ExamplePanels',  components: { default: ExamplePanels  } }, 
-    { path: '/examples/dialogs', name: 'ExampleDialogs', components: { default: ExampleDialog  } }
+    { path: '/examples/dialogs', name: 'ExampleDialogs', components: { default: ExampleDialog  } },
+    { path: '/404', name: 'not-found', components: { default: NotFound } }, 
+    { path: '/:catchAll(.*)', redirect: '/404' }
   ]
 });
 

@@ -9,14 +9,21 @@ export default {
     edit: 'Editar',
     refresh: 'Actualizar',
     save: 'Guardar',
+    submit: 'Enviar',
     accept: 'Aceptar',
     cancel: 'Cancelar',
-    login: 'Iniciar sesión'
+    login: 'Iniciar sesión',
+    clear: 'Limpiar'
+  },
+  placeholder: {
+    selectFile: 'Seleccione fichero',
+    selectItem: 'Seleccione',
+    typeToSearch: 'Escriba para buscar'
   },
   sidebar: {
     home: 'Home',
     examples: 'Ejemplos',
-    exampleForm: 'Formularios',
+    exampleForms: 'Formularios',
     examplePanels: 'Paneles',
     exampleButtons: 'Botones',
     exampleDialogs: 'Modales'

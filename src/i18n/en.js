@@ -9,14 +9,21 @@ export default {
     edit: 'Edit',
     refresh: 'Refresh',
     save: 'Save',
+    submit: 'Submit',
     accept: 'Accept',
     cancel: 'Cancel',
-    login: 'Log in'
+    login: 'Log in',
+    clear: 'Clear'
+  },
+  placeholder: {
+    selectFile: 'Select file',
+    selectItem: 'Select item',
+    typeToSearch: 'Type to search'
   },
   sidebar: {
     home: 'Home',
     examples: 'Examples',
-    exampleForm: 'Form',
+    exampleForms: 'Form',
     examplePanels: 'Panels',
     exampleButtons: 'Buttons',
     exampleDialogs: 'Dialogs'

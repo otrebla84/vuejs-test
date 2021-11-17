@@ -10,7 +10,7 @@ export default {
         { id: 'example-buttons',  i18n: 'sidebar.exampleButtons', link: '/examples/buttons' },
         { id: 'example-panels',  i18n: 'sidebar.examplePanels', link: '/examples/panels' },
         { id: 'example-dialogs',  i18n: 'sidebar.exampleDialogs', link: '/examples/dialogs' },
-        { id: 'example-forms', i18n: 'sidebar.exampleForm', link: '/examples/forms' }
+        { id: 'example-forms', i18n: 'sidebar.exampleForms', link: '/examples/forms' }
       ]
     }
   }

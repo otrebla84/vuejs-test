@@ -15,9 +15,7 @@ const store = createStore({
   },
   actions: {
     setDialog(context, dialog) { context.commit('setDialog', dialog) },
-    setLocale(context, locale) {
-      context.commit('setLocale', locale)
-    }
+    setLocale(context, locale) { context.commit('setLocale', locale) }
   },
   getters: {
     getDialog(state) { return state.dialog },

@@ -5,7 +5,7 @@
       <p>{{getDialog.message}}</p>
     </template>
     <template #actions>
-      <base-button css="btn-primary" @click="closeDialog">{{$t('buttons.accept')}}</base-button>
+      <ui-button css="btn-primary" @click="closeDialog">{{$t('buttons.accept')}}</ui-button>
     </template>
   </base-dialog>
 

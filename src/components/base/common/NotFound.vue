@@ -16,8 +16,8 @@
 
 <style scoped>
     .http-error-alert {
-        border-top: 0 solid #eee;
-        border-bottom: 0 solid #eee;
+        border-top: 0 solid var(--layout-border-color);
+        border-bottom: 0 solid var(--layout-border-color);
         position: relative;
         width: calc(100%);
         height: calc(100vh - 140px);

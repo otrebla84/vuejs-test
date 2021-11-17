@@ -1,7 +1,7 @@
 <template>
   <section id="examples-dialog" class="app-main">
     <h2 class="main-title">
-      <span class="title">Dialog Examples</span>
+      <span class="title">{{$t('sidebar.exampleDialogs')}}</span>
     </h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque eget tellus ut auctor. 
@@ -9,11 +9,11 @@
       Morbi nec facilisis velit. Integer egestas semper risus, vitae vulputate lectus placerat a. Proin iaculis lacus non consequat varius.
     </p>
     <p class="buttons-left">
-      <base-button css="btn-default" @click="openDialogDefault">Default</base-button>
-      <base-button css="btn-info" @click="openDialogInfo">Info</base-button>
-      <base-button css="btn-success" @click="openDialogOk">OK</base-button>
-      <base-button css="btn-warning" @click="openDialogWarning">Warning</base-button>
-      <base-button css="btn-danger" @click="openDialogError">Error</base-button>
+      <ui-button css="btn-default" @click="openDialogDefault">Default</ui-button>
+      <ui-button css="btn-info" @click="openDialogInfo">Info</ui-button>
+      <ui-button css="btn-success" @click="openDialogOk">OK</ui-button>
+      <ui-button css="btn-warning" @click="openDialogWarning">Warning</ui-button>
+      <ui-button css="btn-danger" @click="openDialogError">Error</ui-button>
     </p>  
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque eget tellus ut auctor. 
@@ -21,7 +21,7 @@
       Morbi nec facilisis velit. Integer egestas semper risus, vitae vulputate lectus placerat a. Proin iaculis lacus non consequat varius.
     </p>
     <p class="buttons-left">
-      <base-button css="btn-default" @click="openDialog">Open dialog</base-button>
+      <ui-button css="btn-default" @click="openDialog">Open dialog</ui-button>
     </p>  
   </section>
   
@@ -34,8 +34,8 @@
       </p>
     </template>
     <template #actions>
-      <base-button css="btn-default" @click="closeDialog">Cancelar</base-button>
-      <base-button css="btn-primary" @click="closeDialog">Aceptar</base-button>
+      <ui-button css="btn-default" @click="closeDialog">Cancelar</ui-button>
+      <ui-button css="btn-primary" @click="closeDialog">Aceptar</ui-button>
     </template>
   </base-dialog>
 

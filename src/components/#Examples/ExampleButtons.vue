@@ -2,24 +2,24 @@
   <section id="examples-panels" class="app-main">
 
     <h2 class="main-title">
-      <span class="title">Buttons</span>
+      <span class="title">{{$t('sidebar.exampleButtons')}}</span>
     </h2>
 
     <p class="buttons-left">
-      <base-button css="">Default</base-button>
-      <base-button css="btn-primary">Primary</base-button>
+      <ui-button css="">Default</ui-button>
+      <ui-button css="btn-primary">Primary</ui-button>
     </p> 
 
     <p class="buttons-left">
-      <base-button css="">Button</base-button>
-      <base-button css="">Button</base-button>
-      <base-button css="">Button</base-button>
+      <ui-button css="">Button</ui-button>
+      <ui-button css="">Button</ui-button>
+      <ui-button css="">Button</ui-button>
     </p> 
 
     <p class="buttons-right">
-      <base-button css="">Button</base-button>
-      <base-button css="">Button</base-button>
-      <base-button css="">Button</base-button>
+      <ui-button css="">Button</ui-button>
+      <ui-button css="">Button</ui-button>
+      <ui-button css="">Button</ui-button>
     </p> 
     
   </section>

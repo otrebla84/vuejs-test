@@ -2,7 +2,7 @@
   <section id="examples-panels" class="app-main">
 
     <h2 class="main-title">
-      <span class="title">Panel Examples</span>
+      <span class="title">{{$t('sidebar.examplePanels')}}</span>
     </h2>
 
     <base-panel title="Title (prop)">

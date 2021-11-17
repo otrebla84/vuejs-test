@@ -16,6 +16,11 @@
   font-family: inherit;
 } 
 
+ui-input[type=password] {
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+}
 
 /* LABEL */
 

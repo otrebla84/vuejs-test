@@ -40,11 +40,18 @@
     },
     methods: {
       change(event) {
-        var files = event.target.files || event.dataTransfer.files;
-        this.file = files[0]
-        this.filename = this.file.name
-        // this.$emit('input', this.file)
-        this.$emit('update:modelValue', this.file)
+        if (this.file) {
+          var files = event.target.files || event.dataTransfer.files;
+          this.file = files[0]
+          this.filename = this.file.name
+          this.$emit('update:modelValue', this.file)
+        }
+      }
+    },
+    watch: {
+      modelValue() {
+        this.file = this.modelValue
+        this.filename = this.modelValue ? this.modelValue.name : ''
       }
     }
   }

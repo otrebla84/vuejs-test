@@ -19,7 +19,7 @@
         </section>
         <menu class="dialog-buttons">
           <slot name="actions">
-            <base-button @click="$emit('close')">Close</base-button>
+            <ui-button @click="$emit('close')">Close</ui-button>
           </slot>
         </menu>
       </dialog>
